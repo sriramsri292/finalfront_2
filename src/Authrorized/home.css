@@ -1,0 +1,31 @@
+
+  .Ha {
+    max-width: 100%;
+    max-height: 120vh; /* Set the maximum height to 120vh */
+    background-color: rgba(6, 4, 4, 0.967);
+    color: white;
+    overflow-x: scroll;
+     
+  }
+  
+    
+   
+
+.Hc {
+    
+    margin-top: 20px;
+  
+   
+
+  }
+  
+  
+  .Hc img {
+   
+    margin-right:10px;
+  }
+ 
+  
+  .HHr{
+    background-color:rgba(36, 36, 36, 0.41);
+  }

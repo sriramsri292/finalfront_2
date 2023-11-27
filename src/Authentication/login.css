@@ -1,0 +1,51 @@
+.a {
+  background: linear-gradient(to right, #5ae481, #e9cbcb, #d0ba4a, #8ac6e4, #65b975);
+  /* Other CSS styles for your class "a" */
+}
+
+
+.aa{
+    background: linear-gradient(90deg, black, brown, white);
+  color: transparent; /* Hide the original text color */
+
+  /* Add vendor-specific prefixes for background-clip if necessary */
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+}
+
+.b {
+    width: 100%;
+    height: 90%;
+    position: absolute;
+  
+  }
+  
+  .bb {
+    position: relative;
+    left: 10%;
+    border-width: 20px;
+    width: 60%;
+    height: 70%;
+    background-color: aliceblue;
+    border-radius: 15px;
+    background-color: rgba(170, 224, 170, 0.408);
+    
+  }
+  .aaa{
+    margin-left: 40%;
+    text-transform: capitalize;
+     font-size:xx-large;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 400;
+  }
+
+  .a1 {
+    height: 40px;
+    width: 190px;
+    background: linear-gradient(90deg, #f0f0f0, #664b4b, #a21f1f);
+  }
+  .button{
+    margin-left: 10%;
+    margin-right: 10%;
+  }

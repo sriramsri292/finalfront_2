@@ -1,0 +1,43 @@
+.RRa{
+    max-height: 100%;
+   max-width: 100%;
+    background-color:rgba(9, 9, 9, 0.688);
+  position: relative;
+    
+}
+
+/* In your CSS file (rain.css) */
+.Rt {
+    width: 100%;
+    max-width: 140%; /* Adjust the max-width to your preference */
+    margin: 0 auto;
+    position: absolute;
+    top: 110%;
+    bottom: 60%;
+
+  }
+  .RRf{
+    width: 40%;
+    height: inherit;
+    
+    
+  }
+  .RRR {
+  
+  
+    position: relative;
+    margin-bottom: 10%;
+    width: 100%; /* Ensure it takes the full width */
+    /* Other styles as needed */
+  }
+  .Rn{
+    height: 100%;
+    width: 100%;
+    background-color:rgb(5, 5, 5) ;
+  }
+  .RRRR{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+  }

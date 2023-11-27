@@ -1,0 +1,42 @@
+/* Base styles for .Aa and .Ab */
+
+.AA{
+  height: 100%;
+  width: 100%;
+  display: flex;
+/* Specify the gradient background with color stops */
+background: linear-gradient(to bottom, red, orange, yellow, lightpink);
+
+  
+}
+
+
+.Aa {
+  width: 100%;
+  height: 108%;
+  position: absolute;
+  display: flex;
+}
+
+.Ab {
+  position: relative;
+  display: flex;
+  width: 40%;
+  height: 40%;
+  display: grid;
+  
+}
+
+@media (max-width: 768px) {
+  .Aa {
+    height: 100%; /* Adjust the height as needed for smaller screens */
+    /* Remove flex display for smaller screens */
+}
+  .Ab {
+      width: 90%;
+      margin: 0 auto;
+      height: auto;
+  }
+}
+
+/* Additional responsive styles can be added as needed for other screen sizes */
