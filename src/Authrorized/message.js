@@ -25,7 +25,7 @@ export default function Message() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("https://finalback-q2te.onrender.com/users/users");
+        const response = await fetch("https://finalback-2.onrender.com/users/users");
         const data = await response.json();
   
         if (response.ok) {
@@ -56,7 +56,7 @@ export default function Message() {
   
   const handleSendClick = async () => {
     try {
-      const response = await fetch("https://finalback-q2te.onrender.com/users/message", {
+      const response = await fetch("https://finalback-2.onrender.com/users/message", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -113,7 +113,7 @@ export default function Message() {
     try {
       console.log('Sending request with ChatIds:', chatIds);
       console.log('Attempting to send request with ChatIds:', chatIds);
-      const response = await fetch('https://finalback-q2te.onrender.com/users/conversations', {
+      const response = await fetch('https://finalback-2.onrender.com/users/conversations', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

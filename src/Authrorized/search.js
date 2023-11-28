@@ -47,7 +47,7 @@ const Image = (userName) => {
     useEffect(() => {
       const fetchData = async () => {
         try {
-          const response = await fetch("https://finalback-q2te.onrender.com/users");
+          const response = await fetch("https://finalback-2.onrender.com/users");
           const data = await response.json();
   
           if (response.ok) {

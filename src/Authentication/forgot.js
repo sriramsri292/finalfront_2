@@ -32,7 +32,7 @@ export default function Forgot() {
       password: data.password
     }
 
-    fetch('https://finalback-q2te.onrender.com/auth/forgotpassword', {
+    fetch('https://finalback-2.onrender.com/auth/forgotpassword', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'

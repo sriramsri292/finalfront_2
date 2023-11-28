@@ -22,7 +22,7 @@ export default function HomeUser() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("https://finalback-q2te.onrender.com/users"); // Replace with your actual API endpoint
+        const response = await fetch("https://finalback-2.onrender.com/users"); // Replace with your actual API endpoint
         const data = await response.json();
 
         if (response.ok) {
@@ -61,7 +61,7 @@ export default function HomeUser() {
     console.log("data to be sent ", data);
 
     try {
-      const response = await fetch("https://finalback-q2te.onrender.com/auth/followreq", {
+      const response = await fetch("https://finalback-2.onrender.com/auth/followreq", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -95,7 +95,7 @@ export default function HomeUser() {
   useEffect(() => {
     const fetchData = async (email) => {
       try {
-        const response = await fetch("https://finalback-q2te.onrender.com/users/follow", {
+        const response = await fetch("https://finalback-2.onrender.com/users/follow", {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',

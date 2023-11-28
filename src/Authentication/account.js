@@ -1,6 +1,8 @@
 import React, { useState } from "react";
+import {  useNavigate } from 'react-router-dom';
 import './account.css';
 import Form from 'react-bootstrap/Form';
+
 
 
 import {
@@ -17,6 +19,7 @@ import {
 } from 'mdb-react-ui-kit';
 
 export default function Account() {
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     email: "",
     password: "",
@@ -47,10 +50,10 @@ export default function Account() {
     const data = {
       email: formData.email,
       password: formData.password,
-      firstName: formData.firstName,
+      userName: formData.firstName,
     };
 
-    fetch('https://finalback-q2te.onrender.com/auth/signup', {
+    fetch('https://finalback-2.onrender.com/auth/signup', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json', // Set the content type to JSON
@@ -61,7 +64,12 @@ export default function Account() {
       .then((response) => {
         // Handle the response data here
         console.log(response.message);
-        console.log(response.success); // Log the message directly here
+        console.log(response.success); 
+        if (response.success) {
+          // Navigate to the home page when success is true
+          navigate('/login');
+        }
+        // Log the message directly here
         setMessage({
           message: response.message,
           success: response.success,
@@ -81,11 +89,14 @@ export default function Account() {
         });
       })
       .catch((error) => {
-        // Handle any errors that occur during the fetch request
         console.error(error);
-        // Re-enable the submit button after processing
+        setMessage({
+            message: "Error creating user. Please try again.",
+            success: false,
+        });
         document.getElementById("submit-button").disabled = false;
-      });
+    });
+    
       console.log(message);
   }
 

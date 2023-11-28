@@ -12,7 +12,7 @@ export default function Notify (){
     useEffect(() => {
         const fetchData = async (email) => {
           try {
-            const response = await fetch("https://finalback-q2te.onrender.com/users/notify", {
+            const response = await fetch("https://finalback-2.onrender.com/users/notify", {
               method: 'POST',
               headers: {
                 'Content-Type': 'application/json',

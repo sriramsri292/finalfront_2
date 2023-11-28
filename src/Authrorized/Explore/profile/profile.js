@@ -22,7 +22,7 @@ const Profile = () => {
   const fetchData = async () => {
     try {
       const emailToFetch = userName.name ? userName.name : 'sriram@gmail.com';
-      const response = await fetch('https://finalback-q2te.onrender.com/users/profile', {
+      const response = await fetch('https://finalback-2.onrender.com/users/profile', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -31,8 +31,10 @@ const Profile = () => {
       });
 
       if (!response.ok) {
+        alert("Make sure you uploaded profile image and post");
         throw new Error('Network response was not ok');
       }
+      
 
       const result = await response.json();
       console.log("from profile ",result.data);

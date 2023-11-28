@@ -44,7 +44,7 @@ export default function Upload() {
   
       setFormDataToSend(newFormData);
   
-      const response = await fetch("https://finalback-q2te.onrender.com/users/upload", {
+      const response = await fetch("https://finalback-2.onrender.com/users/upload", {
         method: "POST",
         body: newFormData,
       });

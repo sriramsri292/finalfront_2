@@ -52,7 +52,7 @@ export default function Login() {
     });
 
     try {
-      const response = await fetch('https://finalback-q2te.onrender.com/auth/signin', {
+      const response = await fetch('https://finalback-2.onrender.com/auth/signin', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

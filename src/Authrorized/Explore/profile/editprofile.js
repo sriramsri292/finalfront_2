@@ -58,7 +58,7 @@ const data={
 }
   const handleSubmit = async () => {
     try {
-      const response = await fetch('https://finalback-q2te.onrender.com/auth/updateprofile', {
+      const response = await fetch('https://finalback-2.onrender.com/auth/updateprofile', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
